@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>formulario</title>
+  </head>
+  <header>
+    <h1>Formulario registro</h1>
+  </header>
+  <body>
+    
+    <form action="control.html" method="get">
+      <label for="Propietario">Propietario:</label>
+      <input type="text" name="Propietario" placeholder="Ingrese el propietario del vehiculo" required>
+      <br>
+      <label for="Placa">Placa:</label>
+      <input type="text" name="Placa" placeholder="Ingrese las placas del vehiculo"required >
+      <br>
+      <label for="Marca">Marca:</label>
+      <select name="Marca" required >
+        <option value="marca" disabled selected>Seleccione una marca</option>
+        <option value="bmw">bmw</option>
+        <option value="ns">Nissan</option>
+        <option value="cv">chevrolet</option>
+        <option value="aud">Audi</option>
+      </select>
+      <br>
+      <label for="modelo">Modelo:</label>
+      <input type="text" name="modelo" required placeholder="Ingrese el modelo">
+      <br>
+      <label for="tipo-servicio">Tipo de servicio: </label>
+      <br>
+      <label for="aceite">aceite</label>
+      <input type="checkbox" name="tipo-servicio" value="aceite">
+      <br>
+      <label for="balanceo">balanceo</label>
+      <input type="checkbox" name="tipo-servicio" value="balanceo">
+      <br>
+      <label for="alineo">alineo</label>
+      <input type="checkbox" name="tipo-servicio" value="alineo">
+      <br>
+      <label for="lavado">lavado</label>
+      <input type="checkbox" name="tipo-servicio" value="lavado">
+      <br><br>
+      <label for="servicio">Servicio:</label>
+      <br>
+      <label for="publico">Publico</label>
+      <input type="radio" name="servicio" value="publico" required>
+      <label for="privado">privado</label>
+      <input type="radio" name="servicio" value="privado" required>
+      <br>
+      <input type="reset" value="Borrar datos">
+      <input type="submit" value="Enviar datos">
+
+
+
+
+    </form>
+  </body>
+</html>
