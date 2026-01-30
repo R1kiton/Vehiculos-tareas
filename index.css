@@ -1,16 +1,99 @@
-html{
-    background-color: rgb(172, 255, 172);
+:root{
+    --color_fondo: rgb(116, 153, 184);
+    --fondo-items: rgb(49, 90, 122);
+
 }
-
-
+html{
+    background-color: rgb(81, 78, 78);
+}
 header{
     display: flex;
-    position: relative;
     justify-content: center;
+
+}
+body {
+  margin: 0;
 }
 
-form{
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.formulario {
+  background:linear-gradient(45deg,var(--color_fondo),var(--fondo-items));
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.campo {
+    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.eleccion{
     display: flex;
-    justify-content: center;
-    align-content: center;
+    margin: auto;
+    justify-content: left;
+
+
+}
+fieldset {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.botones {
+  display: inline;
+
+}
+input[type = "text"],select{
+    margin-bottom: 15px;
+    border: 1px ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color:transparent;
+    border-radius: 8px;
+    width: 250px;
+    color: black;
+    height: 28px;
+}
+input:focus, select:focus{
+    outline: none;
+    border: 2px solid var(--fondo-items);
+}
+input::placeholder {
+  color: rgba(38, 38, 40, 0.87);
+}
+option{
+    background-color: transparent;
+    color: black;
+}
+input[type="radio"]{
+    accent-color: var(--color_fondo);
+}
+input[type="checkbox"]{
+    accent-color: var(--color_fondo);
+}
+.boton{
+
+    background-color:transparent;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.opciones{
+    display: flex;
+    flex-direction: column;
+}
+input[type="radio"]{
+    background-color: transparent;
 }
